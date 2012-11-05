@@ -63,7 +63,7 @@ public class SetupTest {
     
     private Bundle getBundle(BundleContext ctx, String symbolicName) {
         for(Bundle b : ctx.getBundles()) {
-            if(MIME_BUNDLE_SN.equals(b.getSymbolicName())) {
+            if(symbolicName.equals(b.getSymbolicName())) {
                 return b;
             }
         }
